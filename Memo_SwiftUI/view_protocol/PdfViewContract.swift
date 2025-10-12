@@ -7,6 +7,6 @@
 import Foundation
 
 protocol PdfViewContract: AnyObject {
-    func setPdfURL(_ pdfURL: URL)
-    func showPdfView(_ isOpenPdfView: Bool)
+    func setShareState(_ isShare: Bool)
+    func setSaveState(_ isSave: Bool)
 }
