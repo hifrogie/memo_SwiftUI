@@ -16,7 +16,7 @@ struct ContentView: View {
         ZStack {
             if showPdfView {
                 if let pdfURL = self.pdfURL {
-                    MemoView(showPdfView: $showPdfView, pdfURL: pdfURL)
+                    MemoView(pdfURL: pdfURL)
                 }
             } else {
                 VStack(spacing: 16) {

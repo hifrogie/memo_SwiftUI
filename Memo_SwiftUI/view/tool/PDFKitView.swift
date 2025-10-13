@@ -9,15 +9,16 @@ import PDFKit
 
 struct PDFKitView: UIViewRepresentable {
     let url: URL
+    let isScroll:Bool
     @Binding var mode: PDFToolMode
     @Binding var lastSavedURL: URL?
-    @Binding var memoText: String
+    var memoText: String
     func makeUIView(context: Context) -> PDFView {
         let v = PDFView()
         v.autoScales = true
         v.displayMode = .singlePageContinuous
         v.document = PDFDocument(url: url)
-
+    
         // 제스처: 탭 → 메모, 팬 → 필기/지우개
         let tap = UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap(_:)))
         v.addGestureRecognizer(tap)
@@ -36,6 +37,20 @@ struct PDFKitView: UIViewRepresentable {
 
     func updateUIView(_ uiView: PDFView, context: Context) {
         context.coordinator.memoText = memoText
+        
+        outerLoop: for childView in uiView.subviews {
+            if let scrollView = childView as? UIScrollView {
+                scrollView.isScrollEnabled = isScroll
+                break
+            } else {
+                for childSubView in childView.subviews {
+                    if let scrollView = childSubView as? UIScrollView {
+                        scrollView.isScrollEnabled = isScroll
+                        break outerLoop
+                    }
+                }
+            }
+        }
     }
     
     func makeCoordinator() -> Coordinator { Coordinator() }
@@ -43,7 +58,7 @@ struct PDFKitView: UIViewRepresentable {
     final class Coordinator: NSObject {
         var memoText: String?
         weak var pdfView: PDFView?
-        var getMode: (() -> PDFToolMode)?
+        var getMode: (() -> PDFToolMode)? //Q 왜 클로져로 mode를 사용할까?
         var getURL: (() -> URL)?
         var onSaved: ((URL) -> Void)?
         private var inkPath: UIBezierPath?
@@ -108,20 +123,10 @@ struct PDFKitView: UIViewRepresentable {
             ann.contents = contents
             ann.font = .systemFont(ofSize: 14)
             ann.fontColor = .label
-            ann.color = .systemYellow
+            ann.color = .systemYellow.withAlphaComponent(0.3)
             ann.setValue("Note", forAnnotationKey: PDFAnnotationKey.iconName)
             page.addAnnotation(ann)
         }
-
-        @objc private func notified(_ notification: Notification) {
-           if let page = notification.object as? PDFKitView {
-               
-               if let annotation = notification.userInfo!["PDFAnnotationHit"] as? PDFAnnotation {
-                   print("my custom image")
-                   print(annotation.value(forAnnotationKey: .contents))
-               }
-           }
-       }
         
         private func addFreeText(on page: PDFPage, at pt: CGPoint, text: String) {
             let rect = CGRect(x: pt.x, y: pt.y, width: 220, height: 80)
