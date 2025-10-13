@@ -134,7 +134,7 @@ struct PDFKitView: UIViewRepresentable {
             ann.contents = text
             ann.font = .systemFont(ofSize: 14)
             ann.fontColor = .label
-            ann.color = .systemYellow
+            ann.color = .systemYellow.withAlphaComponent(0.3)
             let border = PDFBorder(); border.lineWidth = 0
             ann.border = border
             page.addAnnotation(ann)

@@ -13,18 +13,15 @@ struct MemoView: View {
     @State private var mode: PDFToolMode = .none
     @State private var savedURL: URL?
     @StateObject var adapter = PdfViewAdapter()
+    @StateObject private var keyboard = KeyboardObserver()
     @State private var isViewPdf: Bool = true
     @State private var isMemoPdf: Bool = false
     @State private var isWritePdf: Bool = false
     @State private var isScroll = true
+    @State private var textHeight: CGFloat = 36   // 최소 높이
+    
     var body: some View {
         VStack {
-            if isMemoPdf {
-                MemoTextField(title: "메모를 입력 후 원하는 위치를 탭 해주세요.", placeholder: "메모를 입력해주세요.", text: $memoText)
-                    .padding(.horizontal)
-                    .padding(.vertical, 8)
-                    .background(.ultraThinMaterial)
-            }
             HStack(spacing: 10) {
                 Toggle("보기", isOn: $isViewPdf)
                     .background(Color.blue)
@@ -61,13 +58,34 @@ struct MemoView: View {
             PDFKitView(url: pdfURL, isScroll: isScroll, mode: $mode, lastSavedURL: $savedURL, memoText: memoText)
                 .frame(width: 360, height: 600)
             
-            Button("저장") { adapter.setSaveState(true) }
-            Button("공유") { adapter.setShareState(true) }
-        }
-        .sheet(isPresented: $adapter.isShare) {
-            if let savedURL = savedURL {
-                ShareSheet(items: [savedURL])
+            Button("저장") {
+                if let topVC = UIApplication.shared.connectedScenes
+                    .compactMap({ ($0 as? UIWindowScene)?.keyWindow?.rootViewController })
+                    .first {
+                    if let savedURL = savedURL {
+                        PDFExporter().exportPDF(savedURL, from: topVC)
+                    }
+                }
             }
+            Button("공유") { adapter.setShareState(true) }
+                .sheet(isPresented: $adapter.isShare) {
+                    if let savedURL = savedURL {
+                        ShareSheet(items: [savedURL])
+                    }
+                }
+        }
+        .overlay(alignment: .bottom) {
+            if isMemoPdf {
+                MemoTextField(title: "메모를 입력 후 원하는 위치를 탭 해주세요.", placeholder: "메모를 입력해주세요.", text: $memoText)
+                    .frame(height: 22)
+                    .padding(.horizontal)
+                    .padding(.bottom, keyboard.keyboardHeight)
+                    .animation(.easeOut(duration: 0.25), value: keyboard.keyboardHeight)
+            }
+        }
+        .ignoresSafeArea(.keyboard)
+        .onAppear {
+            savedURL = pdfURL
         }
     }
 }

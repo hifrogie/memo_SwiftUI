@@ -23,13 +23,10 @@ struct MemoTextField: View {
             TextField(placeholder, text: $text)
                 .focused($isFocused)
                 .padding(10)
-                .background(
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(isFocused ? Color.accentColor : Color.gray.opacity(0.3), lineWidth: 1.5)
-                )
+                .background(Color.gray.opacity(0.3))
+                .frame(height: 22)
         }
         .background(Color(.secondarySystemBackground))
-        .cornerRadius(10)
         .animation(.easeInOut(duration: 0.2), value: isFocused)
     }
 }
