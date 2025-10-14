@@ -24,7 +24,6 @@ struct MemoTextField: View {
                 .focused($isFocused)
                 .padding(10)
                 .background(Color.gray.opacity(0.3))
-                .frame(height: 22)
         }
         .background(Color(.secondarySystemBackground))
         .animation(.easeInOut(duration: 0.2), value: isFocused)

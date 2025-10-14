@@ -18,7 +18,6 @@ struct MemoView: View {
     @State private var isMemoPdf: Bool = false
     @State private var isWritePdf: Bool = false
     @State private var isScroll = true
-    @State private var textHeight: CGFloat = 36   // 최소 높이
     
     var body: some View {
         VStack {
@@ -73,8 +72,7 @@ struct MemoView: View {
                         ShareSheet(items: [savedURL])
                     }
                 }
-        }
-        .overlay(alignment: .bottom) {
+            
             if isMemoPdf {
                 MemoTextField(title: "메모를 입력 후 원하는 위치를 탭 해주세요.", placeholder: "메모를 입력해주세요.", text: $memoText)
                     .frame(height: 22)
@@ -83,7 +81,7 @@ struct MemoView: View {
                     .animation(.easeOut(duration: 0.25), value: keyboard.keyboardHeight)
             }
         }
-        .ignoresSafeArea(.keyboard)
+        .ignoresSafeArea(.keyboard, edges: .bottom)
         .onAppear {
             savedURL = pdfURL
         }
