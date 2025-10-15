@@ -18,14 +18,20 @@ struct MemoView: View {
     @State private var isMemoPdf: Bool = false
     @State private var isWritePdf: Bool = false
     @State private var isScroll = true
-    @FocusState private var isFocused: Bool
     
     var body: some View {
         VStack {
+            if isMemoPdf {
+                MemoTextField(title: "메모를 입력 후 원하는 위치를 탭 해주세요.", placeholder: "메모를 입력해주세요.", text: $memoText)
+                    .frame(height: 22)
+                    .padding(.horizontal)
+//                    .padding(.bottom, keyboard.keyboardHeight)
+//                    .animation(.easeOut(duration: 0.25), value: keyboard.keyboardHeight)
+            }
             HStack(spacing: 10) {
                 Toggle("보기", isOn: $isViewPdf)
                     .background(Color.blue)
-                    .onChange(of: isViewPdf, initial: true) { oldValue, newValue in
+                    .onChange(of: isViewPdf) { newValue in
                         if newValue {
                             mode = .none
                             isMemoPdf = false
@@ -35,18 +41,17 @@ struct MemoView: View {
                     }
                 Toggle("메모", isOn: $isMemoPdf)
                     .background(Color.red)
-                    .onChange(of: isMemoPdf, initial: true) { oldValue, newValue in
+                    .onChange(of: isMemoPdf) { newValue in
                         if newValue {
                             mode = .freeText
                             isViewPdf = false
                             isWritePdf = false
                             isScroll = false
-                            isFocused.toggle()
                         }
                     }
                 Toggle("필기", isOn: $isWritePdf)
                     .background(Color.yellow)
-                    .onChange(of: isWritePdf, initial: true) { oldValue, newValue in
+                    .onChange(of: isWritePdf) {  newValue in
                         if newValue {
                             mode = .ink(color: .black, width: 3)
                             isViewPdf = false
@@ -74,37 +79,11 @@ struct MemoView: View {
                         ShareSheet(items: [savedURL])
                     }
                 }
-            
-//            if isMemoPdf {
-//                TextField("메모를 입력해주세요.", text: $memoText)
-//                    .focused($isFocused)
-//                    .padding(10)
-//                    .background(Color.gray.opacity(0.3))
-//                    .padding(.bottom, keyboard.keyboardHeight)
-//                    .animation(.easeOut(duration: 0.25), value: keyboard.keyboardHeight)
-//                
-////                MemoTextField(title: "메모를 입력 후 원하는 위치를 탭 해주세요.", placeholder: "메모를 입력해주세요.", text: $memoText)
-////                    .frame(height: 22)
-////                    .padding(.horizontal)
-////                    .padding(.bottom, keyboard.keyboardHeight)
-////                    .animation(.easeOut(duration: 0.25), value: keyboard.keyboardHeight)
-//            }
         }
+        .ignoresSafeArea(.keyboard)
         .onAppear {
             savedURL = pdfURL
         }
-        .toolbar {
-            ToolbarItemGroup(placement: .keyboard) {
-//                if isMemoPdf {
-                    TextField("메모를 입력해주세요.", text: $memoText)
-                        .focused($isFocused)
-                        .padding(10)
-                        .background(Color.gray.opacity(0.3))
-                        .animation(.easeOut(duration: 0.25), value: isFocused)
-//                }
-            }
-        }
-//        .ignoresSafeArea(.keyboard, edges: .bottom)
     }
 }
 
