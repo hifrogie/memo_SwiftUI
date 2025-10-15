@@ -1,0 +1,1908 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "pdf_Viewer_sdk",
+    "printedName": "pdf_Viewer_sdk",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk"
+      },
+      {
+        "kind": "Function",
+        "name": "hello",
+        "printedName": "hello()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:14pdf_Viewer_sdk5helloSSyF",
+        "mangledName": "$s14pdf_Viewer_sdk5helloSSyF",
+        "moduleName": "pdf_Viewer_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PDF_SDK",
+        "printedName": "PDF_SDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PDF_SDK",
+                "printedName": "pdf_Viewer_sdk.PDF_SDK",
+                "usr": "s:14pdf_Viewer_sdk7PDF_SDKC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14pdf_Viewer_sdk7PDF_SDKC6sharedACvpZ",
+            "mangledName": "$s14pdf_Viewer_sdk7PDF_SDKC6sharedACvpZ",
+            "moduleName": "pdf_Viewer_sdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PDF_SDK",
+                    "printedName": "pdf_Viewer_sdk.PDF_SDK",
+                    "usr": "s:14pdf_Viewer_sdk7PDF_SDKC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14pdf_Viewer_sdk7PDF_SDKC6sharedACvgZ",
+                "mangledName": "$s14pdf_Viewer_sdk7PDF_SDKC6sharedACvgZ",
+                "moduleName": "pdf_Viewer_sdk",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(step_num:isHintLogPrint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PDF_STEP_NUM",
+                "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM",
+                "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14pdf_Viewer_sdk7PDF_SDKC10initialize8step_num14isHintLogPrintyAA0D9_STEP_NUMO_SbtF",
+            "mangledName": "$s14pdf_Viewer_sdk7PDF_SDKC10initialize8step_num14isHintLogPrintyAA0D9_STEP_NUMO_SbtF",
+            "moduleName": "pdf_Viewer_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVersionView",
+            "printedName": "getVersionView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyView",
+                "printedName": "SwiftUI.AnyView",
+                "usr": "s:7SwiftUI7AnyViewV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14pdf_Viewer_sdk7PDF_SDKC14getVersionView7SwiftUI03AnyH0VyF",
+            "mangledName": "$s14pdf_Viewer_sdk7PDF_SDKC14getVersionView7SwiftUI03AnyH0VyF",
+            "moduleName": "pdf_Viewer_sdk",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PDF_SDK",
+                "printedName": "pdf_Viewer_sdk.PDF_SDK",
+                "usr": "s:14pdf_Viewer_sdk7PDF_SDKC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14pdf_Viewer_sdk7PDF_SDKCACycfc",
+            "mangledName": "$s14pdf_Viewer_sdk7PDF_SDKCACycfc",
+            "moduleName": "pdf_Viewer_sdk",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14pdf_Viewer_sdk7PDF_SDKC",
+        "mangledName": "$s14pdf_Viewer_sdk7PDF_SDKC",
+        "moduleName": "pdf_Viewer_sdk",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PDF_STEP_NUM",
+        "printedName": "PDF_STEP_NUM",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "firstStep",
+            "printedName": "firstStep",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdf_Viewer_sdk.PDF_STEP_NUM.Type) -> pdf_Viewer_sdk.PDF_STEP_NUM",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PDF_STEP_NUM",
+                    "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM",
+                    "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PDF_STEP_NUM",
+                        "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM",
+                        "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO9firstStepyA2CmF",
+            "mangledName": "$s14pdf_Viewer_sdk12PDF_STEP_NUMO9firstStepyA2CmF",
+            "moduleName": "pdf_Viewer_sdk"
+          },
+          {
+            "kind": "Var",
+            "name": "secondStep",
+            "printedName": "secondStep",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdf_Viewer_sdk.PDF_STEP_NUM.Type) -> pdf_Viewer_sdk.PDF_STEP_NUM",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PDF_STEP_NUM",
+                    "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM",
+                    "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PDF_STEP_NUM",
+                        "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM",
+                        "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO10secondStepyA2CmF",
+            "mangledName": "$s14pdf_Viewer_sdk12PDF_STEP_NUMO10secondStepyA2CmF",
+            "moduleName": "pdf_Viewer_sdk"
+          },
+          {
+            "kind": "Var",
+            "name": "thirdStep",
+            "printedName": "thirdStep",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdf_Viewer_sdk.PDF_STEP_NUM.Type) -> pdf_Viewer_sdk.PDF_STEP_NUM",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PDF_STEP_NUM",
+                    "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM",
+                    "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PDF_STEP_NUM",
+                        "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM",
+                        "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO9thirdStepyA2CmF",
+            "mangledName": "$s14pdf_Viewer_sdk12PDF_STEP_NUMO9thirdStepyA2CmF",
+            "moduleName": "pdf_Viewer_sdk"
+          },
+          {
+            "kind": "Var",
+            "name": "fourthStep",
+            "printedName": "fourthStep",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(pdf_Viewer_sdk.PDF_STEP_NUM.Type) -> pdf_Viewer_sdk.PDF_STEP_NUM",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PDF_STEP_NUM",
+                    "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM",
+                    "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PDF_STEP_NUM",
+                        "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM",
+                        "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO10fourthStepyA2CmF",
+            "mangledName": "$s14pdf_Viewer_sdk12PDF_STEP_NUMO10fourthStepyA2CmF",
+            "moduleName": "pdf_Viewer_sdk"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PDF_STEP_NUM",
+                    "printedName": "pdf_Viewer_sdk.PDF_STEP_NUM",
+                    "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO8rawValueACSgSi_tcfc",
+            "mangledName": "$s14pdf_Viewer_sdk12PDF_STEP_NUMO8rawValueACSgSi_tcfc",
+            "moduleName": "pdf_Viewer_sdk",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO8rawValueSivp",
+            "mangledName": "$s14pdf_Viewer_sdk12PDF_STEP_NUMO8rawValueSivp",
+            "moduleName": "pdf_Viewer_sdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO8rawValueSivg",
+                "mangledName": "$s14pdf_Viewer_sdk12PDF_STEP_NUMO8rawValueSivg",
+                "moduleName": "pdf_Viewer_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14pdf_Viewer_sdk12PDF_STEP_NUMO",
+        "mangledName": "$s14pdf_Viewer_sdk12PDF_STEP_NUMO",
+        "moduleName": "pdf_Viewer_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk"
+      },
+      {
+        "kind": "Import",
+        "name": "PDFKit",
+        "printedName": "PDFKit",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk"
+      },
+      {
+        "kind": "Import",
+        "name": "UniformTypeIdentifiers",
+        "printedName": "UniformTypeIdentifiers",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PDFFourthStepView",
+        "printedName": "PDFFourthStepView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14pdf_Viewer_sdk17PDFFourthStepViewV4bodyQrvp",
+            "mangledName": "$s14pdf_Viewer_sdk17PDFFourthStepViewV4bodyQrvp",
+            "moduleName": "pdf_Viewer_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14pdf_Viewer_sdk17PDFFourthStepViewV4bodyQrvg",
+                "mangledName": "$s14pdf_Viewer_sdk17PDFFourthStepViewV4bodyQrvg",
+                "moduleName": "pdf_Viewer_sdk",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PDFFourthStepView",
+                "printedName": "pdf_Viewer_sdk.PDFFourthStepView",
+                "usr": "s:14pdf_Viewer_sdk17PDFFourthStepViewV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14pdf_Viewer_sdk17PDFFourthStepViewVACycfc",
+            "mangledName": "$s14pdf_Viewer_sdk17PDFFourthStepViewVACycfc",
+            "moduleName": "pdf_Viewer_sdk",
+            "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14pdf_Viewer_sdk17PDFFourthStepViewV",
+        "mangledName": "$s14pdf_Viewer_sdk17PDFFourthStepViewV",
+        "moduleName": "pdf_Viewer_sdk",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PDFKit",
+        "printedName": "PDFKit",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PDFSecondStepView",
+        "printedName": "PDFSecondStepView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "_selectedFileURL",
+            "printedName": "_selectedFileURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "State",
+                "printedName": "SwiftUI.State<Foundation.URL?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:7SwiftUI5StateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14pdf_Viewer_sdk17PDFSecondStepViewV16_selectedFileURL33_0B457840431D02FFB1FF6A8020359686LL7SwiftUI5StateVy10Foundation0I0VSgGvp",
+            "mangledName": "$s14pdf_Viewer_sdk17PDFSecondStepViewV16_selectedFileURL33_0B457840431D02FFB1FF6A8020359686LL7SwiftUI5StateVy10Foundation0I0VSgGvp",
+            "moduleName": "pdf_Viewer_sdk",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "_showingFilePicker",
+            "printedName": "_showingFilePicker",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "State",
+                "printedName": "SwiftUI.State<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI5StateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14pdf_Viewer_sdk17PDFSecondStepViewV18_showingFilePicker33_0B457840431D02FFB1FF6A8020359686LL7SwiftUI5StateVySbGvp",
+            "mangledName": "$s14pdf_Viewer_sdk17PDFSecondStepViewV18_showingFilePicker33_0B457840431D02FFB1FF6A8020359686LL7SwiftUI5StateVySbGvp",
+            "moduleName": "pdf_Viewer_sdk",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "_toastMessage",
+            "printedName": "_toastMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "State",
+                "printedName": "SwiftUI.State<Swift.String?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:7SwiftUI5StateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14pdf_Viewer_sdk17PDFSecondStepViewV13_toastMessage33_0B457840431D02FFB1FF6A8020359686LL7SwiftUI5StateVySSSgGvp",
+            "mangledName": "$s14pdf_Viewer_sdk17PDFSecondStepViewV13_toastMessage33_0B457840431D02FFB1FF6A8020359686LL7SwiftUI5StateVySSSgGvp",
+            "moduleName": "pdf_Viewer_sdk",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14pdf_Viewer_sdk17PDFSecondStepViewV4bodyQrvp",
+            "mangledName": "$s14pdf_Viewer_sdk17PDFSecondStepViewV4bodyQrvp",
+            "moduleName": "pdf_Viewer_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14pdf_Viewer_sdk17PDFSecondStepViewV4bodyQrvg",
+                "mangledName": "$s14pdf_Viewer_sdk17PDFSecondStepViewV4bodyQrvg",
+                "moduleName": "pdf_Viewer_sdk",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PDFSecondStepView",
+                "printedName": "pdf_Viewer_sdk.PDFSecondStepView",
+                "usr": "s:14pdf_Viewer_sdk17PDFSecondStepViewV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14pdf_Viewer_sdk17PDFSecondStepViewVACycfc",
+            "mangledName": "$s14pdf_Viewer_sdk17PDFSecondStepViewVACycfc",
+            "moduleName": "pdf_Viewer_sdk",
+            "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14pdf_Viewer_sdk17PDFSecondStepViewV",
+        "mangledName": "$s14pdf_Viewer_sdk17PDFSecondStepViewV",
+        "moduleName": "pdf_Viewer_sdk",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PDFKitView",
+        "printedName": "PDFKitView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14pdf_Viewer_sdk10PDFKitViewV3url10Foundation3URLVvp",
+            "mangledName": "$s14pdf_Viewer_sdk10PDFKitViewV3url10Foundation3URLVvp",
+            "moduleName": "pdf_Viewer_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14pdf_Viewer_sdk10PDFKitViewV3url10Foundation3URLVvg",
+                "mangledName": "$s14pdf_Viewer_sdk10PDFKitViewV3url10Foundation3URLVvg",
+                "moduleName": "pdf_Viewer_sdk",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "makeUIView",
+            "printedName": "makeUIView(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PDFView",
+                "printedName": "PDFKit.PDFView",
+                "usr": "c:objc(cs)PDFView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewRepresentableContext",
+                "printedName": "SwiftUI.UIViewRepresentableContext<pdf_Viewer_sdk.PDFKitView>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PDFKitView",
+                    "printedName": "pdf_Viewer_sdk.PDFKitView",
+                    "usr": "s:14pdf_Viewer_sdk10PDFKitViewV"
+                  }
+                ],
+                "usr": "s:7SwiftUI26UIViewRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14pdf_Viewer_sdk10PDFKitViewV10makeUIView7contextSo7PDFViewC7SwiftUI0G20RepresentableContextVyACG_tF",
+            "mangledName": "$s14pdf_Viewer_sdk10PDFKitViewV10makeUIView7contextSo7PDFViewC7SwiftUI0G20RepresentableContextVyACG_tF",
+            "moduleName": "pdf_Viewer_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUIView",
+            "printedName": "updateUIView(_:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PDFView",
+                "printedName": "PDFKit.PDFView",
+                "usr": "c:objc(cs)PDFView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewRepresentableContext",
+                "printedName": "SwiftUI.UIViewRepresentableContext<pdf_Viewer_sdk.PDFKitView>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PDFKitView",
+                    "printedName": "pdf_Viewer_sdk.PDFKitView",
+                    "usr": "s:14pdf_Viewer_sdk10PDFKitViewV"
+                  }
+                ],
+                "usr": "s:7SwiftUI26UIViewRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14pdf_Viewer_sdk10PDFKitViewV12updateUIView_7contextySo7PDFViewC_7SwiftUI0G20RepresentableContextVyACGtF",
+            "mangledName": "$s14pdf_Viewer_sdk10PDFKitViewV12updateUIView_7contextySo7PDFViewC_7SwiftUI0G20RepresentableContextVyACGtF",
+            "moduleName": "pdf_Viewer_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PDFKitView",
+                "printedName": "pdf_Viewer_sdk.PDFKitView",
+                "usr": "s:14pdf_Viewer_sdk10PDFKitViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14pdf_Viewer_sdk10PDFKitViewV3urlAC10Foundation3URLV_tcfc",
+            "mangledName": "$s14pdf_Viewer_sdk10PDFKitViewV3urlAC10Foundation3URLV_tcfc",
+            "moduleName": "pdf_Viewer_sdk",
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14pdf_Viewer_sdk10PDFKitViewV",
+        "mangledName": "$s14pdf_Viewer_sdk10PDFKitViewV",
+        "moduleName": "pdf_Viewer_sdk",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UIViewRepresentable",
+            "printedName": "UIViewRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UIViewType",
+                "printedName": "UIViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PDFView",
+                    "printedName": "PDFKit.PDFView",
+                    "usr": "c:objc(cs)PDFView"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Coordinator",
+                "printedName": "Coordinator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI19UIViewRepresentableP",
+            "mangledName": "$s7SwiftUI19UIViewRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PDFKit",
+        "printedName": "PDFKit",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk"
+      },
+      {
+        "kind": "Import",
+        "name": "UniformTypeIdentifiers",
+        "printedName": "UniformTypeIdentifiers",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PDFFirstStepView",
+        "printedName": "PDFFirstStepView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "_selectedFileURL",
+            "printedName": "_selectedFileURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "State",
+                "printedName": "SwiftUI.State<Foundation.URL?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:7SwiftUI5StateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14pdf_Viewer_sdk16PDFFirstStepViewV16_selectedFileURL33_106072D2CCCEFCF3D1658F5598A6E26FLL7SwiftUI5StateVy10Foundation0I0VSgGvp",
+            "mangledName": "$s14pdf_Viewer_sdk16PDFFirstStepViewV16_selectedFileURL33_106072D2CCCEFCF3D1658F5598A6E26FLL7SwiftUI5StateVy10Foundation0I0VSgGvp",
+            "moduleName": "pdf_Viewer_sdk",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "_showingFilePicker",
+            "printedName": "_showingFilePicker",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "State",
+                "printedName": "SwiftUI.State<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI5StateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14pdf_Viewer_sdk16PDFFirstStepViewV18_showingFilePicker33_106072D2CCCEFCF3D1658F5598A6E26FLL7SwiftUI5StateVySbGvp",
+            "mangledName": "$s14pdf_Viewer_sdk16PDFFirstStepViewV18_showingFilePicker33_106072D2CCCEFCF3D1658F5598A6E26FLL7SwiftUI5StateVySbGvp",
+            "moduleName": "pdf_Viewer_sdk",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "_toastMessage",
+            "printedName": "_toastMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "State",
+                "printedName": "SwiftUI.State<Swift.String?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:7SwiftUI5StateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14pdf_Viewer_sdk16PDFFirstStepViewV13_toastMessage33_106072D2CCCEFCF3D1658F5598A6E26FLL7SwiftUI5StateVySSSgGvp",
+            "mangledName": "$s14pdf_Viewer_sdk16PDFFirstStepViewV13_toastMessage33_106072D2CCCEFCF3D1658F5598A6E26FLL7SwiftUI5StateVySSSgGvp",
+            "moduleName": "pdf_Viewer_sdk",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14pdf_Viewer_sdk16PDFFirstStepViewV4bodyQrvp",
+            "mangledName": "$s14pdf_Viewer_sdk16PDFFirstStepViewV4bodyQrvp",
+            "moduleName": "pdf_Viewer_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14pdf_Viewer_sdk16PDFFirstStepViewV4bodyQrvg",
+                "mangledName": "$s14pdf_Viewer_sdk16PDFFirstStepViewV4bodyQrvg",
+                "moduleName": "pdf_Viewer_sdk",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PDFFirstStepView",
+                "printedName": "pdf_Viewer_sdk.PDFFirstStepView",
+                "usr": "s:14pdf_Viewer_sdk16PDFFirstStepViewV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14pdf_Viewer_sdk16PDFFirstStepViewVACycfc",
+            "mangledName": "$s14pdf_Viewer_sdk16PDFFirstStepViewVACycfc",
+            "moduleName": "pdf_Viewer_sdk",
+            "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14pdf_Viewer_sdk16PDFFirstStepViewV",
+        "mangledName": "$s14pdf_Viewer_sdk16PDFFirstStepViewV",
+        "moduleName": "pdf_Viewer_sdk",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk"
+      },
+      {
+        "kind": "Import",
+        "name": "PDFKit",
+        "printedName": "PDFKit",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk"
+      },
+      {
+        "kind": "Import",
+        "name": "UniformTypeIdentifiers",
+        "printedName": "UniformTypeIdentifiers",
+        "declKind": "Import",
+        "moduleName": "pdf_Viewer_sdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PDFThirdStepView",
+        "printedName": "PDFThirdStepView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14pdf_Viewer_sdk16PDFThirdStepViewV4bodyQrvp",
+            "mangledName": "$s14pdf_Viewer_sdk16PDFThirdStepViewV4bodyQrvp",
+            "moduleName": "pdf_Viewer_sdk",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14pdf_Viewer_sdk16PDFThirdStepViewV4bodyQrvg",
+                "mangledName": "$s14pdf_Viewer_sdk16PDFThirdStepViewV4bodyQrvg",
+                "moduleName": "pdf_Viewer_sdk",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PDFThirdStepView",
+                "printedName": "pdf_Viewer_sdk.PDFThirdStepView",
+                "usr": "s:14pdf_Viewer_sdk16PDFThirdStepViewV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14pdf_Viewer_sdk16PDFThirdStepViewVACycfc",
+            "mangledName": "$s14pdf_Viewer_sdk16PDFThirdStepViewVACycfc",
+            "moduleName": "pdf_Viewer_sdk",
+            "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14pdf_Viewer_sdk16PDFThirdStepViewV",
+        "mangledName": "$s14pdf_Viewer_sdk16PDFThirdStepViewV",
+        "moduleName": "pdf_Viewer_sdk",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIApplication",
+        "printedName": "UIApplication",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "topViewController",
+            "printedName": "topViewController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So13UIApplicationC14pdf_Viewer_sdkE17topViewControllerSo06UIViewG0CSgvpZ",
+            "mangledName": "$sSo13UIApplicationC14pdf_Viewer_sdkE17topViewControllerSo06UIViewG0CSgvpZ",
+            "moduleName": "pdf_Viewer_sdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIViewController",
+                        "printedName": "UIKit.UIViewController",
+                        "usr": "c:objc(cs)UIViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So13UIApplicationC14pdf_Viewer_sdkE17topViewControllerSo06UIViewG0CSgvgZ",
+                "mangledName": "$sSo13UIApplicationC14pdf_Viewer_sdkE17topViewControllerSo06UIViewG0CSgvgZ",
+                "moduleName": "pdf_Viewer_sdk",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIApplication",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIApplication",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/yhjeon\/anick\/pdf_Test_App\/pdf_Viewer_sdk\/pdf_Viewer_sdk\/pdf_Viewer_sdk.swift",
+      "kind": "BooleanLiteral",
+      "offset": 943,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yhjeon\/anick\/pdf_Test_App\/pdf_Viewer_sdk\/pdf_Viewer_sdk\/pdf_Viewer_sdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1689,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/yhjeon\/anick\/pdf_Test_App\/pdf_Viewer_sdk\/pdf_Viewer_sdk\/pdf_Viewer_sdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1713,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/yhjeon\/anick\/pdf_Test_App\/pdf_Viewer_sdk\/pdf_Viewer_sdk\/pdf_Viewer_sdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1737,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/yhjeon\/anick\/pdf_Test_App\/pdf_Viewer_sdk\/pdf_Viewer_sdk\/pdf_Viewer_sdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1761,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/yhjeon\/anick\/pdf_Test_App\/pdf_Viewer_sdk\/pdf_Viewer_sdk\/PDFSecondStepView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 243,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yhjeon\/anick\/pdf_Test_App\/pdf_Viewer_sdk\/pdf_Viewer_sdk\/PDFFirstStepView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 272,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

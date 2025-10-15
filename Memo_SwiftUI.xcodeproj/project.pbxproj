@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07AC4BED2E9FE69F00621B80 /* pdf_Viewer_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AC4BEC2E9FE69F00621B80 /* pdf_Viewer_sdk.framework */; };
+		07AC4BEE2E9FE69F00621B80 /* pdf_Viewer_sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07AC4BEC2E9FE69F00621B80 /* pdf_Viewer_sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		520D56B1A6F0776952539EA0 /* Pods_Memo_SwiftUI_Memo_SwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037B97512C3643C4E2A235D4 /* Pods_Memo_SwiftUI_Memo_SwiftUIUITests.framework */; };
 		915808BFF455B541A5A96456 /* Pods_Memo_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11056911AF388D41161DB850 /* Pods_Memo_SwiftUI.framework */; };
 		BE881C02E6557C689A7F1ED7 /* Pods_Memo_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D904C786597C7D33B0D8650 /* Pods_Memo_SwiftUITests.framework */; };
@@ -29,11 +31,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		07AC4BEF2E9FE69F00621B80 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				07AC4BEE2E9FE69F00621B80 /* pdf_Viewer_sdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		037B97512C3643C4E2A235D4 /* Pods_Memo_SwiftUI_Memo_SwiftUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memo_SwiftUI_Memo_SwiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0722BEFF2E9A28E300A4D614 /* Memo_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memo_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0722BF0C2E9A28E500A4D614 /* Memo_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Memo_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0722BF162E9A28E500A4D614 /* Memo_SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Memo_SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AC4BEC2E9FE69F00621B80 /* pdf_Viewer_sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pdf_Viewer_sdk.framework; sourceTree = "<group>"; };
+		07BBE3192E9FBC4A007BE1FC /* pdf_Viewer_sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pdf_Viewer_sdk.framework; path = ../../../Downloads/pdf_Viewer_sdk.framework; sourceTree = "<group>"; };
 		11056911AF388D41161DB850 /* Pods_Memo_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memo_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D904C786597C7D33B0D8650 /* Pods_Memo_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memo_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		537D47C77BCAD5A6BF595822 /* Pods-Memo_SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memo_SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Memo_SwiftUI/Pods-Memo_SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07AC4BED2E9FE69F00621B80 /* pdf_Viewer_sdk.framework in Frameworks */,
 				915808BFF455B541A5A96456 /* Pods_Memo_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +134,8 @@
 		11ABCE6F6C7FAA4AF631132B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07BBE3192E9FBC4A007BE1FC /* pdf_Viewer_sdk.framework */,
+				07AC4BEC2E9FE69F00621B80 /* pdf_Viewer_sdk.framework */,
 				11056911AF388D41161DB850 /* Pods_Memo_SwiftUI.framework */,
 				037B97512C3643C4E2A235D4 /* Pods_Memo_SwiftUI_Memo_SwiftUIUITests.framework */,
 				3D904C786597C7D33B0D8650 /* Pods_Memo_SwiftUITests.framework */,
@@ -146,6 +167,7 @@
 				0722BEFB2E9A28E300A4D614 /* Sources */,
 				0722BEFC2E9A28E300A4D614 /* Frameworks */,
 				0722BEFD2E9A28E300A4D614 /* Resources */,
+				07AC4BEF2E9FE69F00621B80 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -509,13 +531,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6BM3L49F73;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/hi-macbook/Desktop/uniwiz/Memo_SwiftUI",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -539,13 +565,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6BM3L49F73;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/hi-macbook/Desktop/uniwiz/Memo_SwiftUI",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
