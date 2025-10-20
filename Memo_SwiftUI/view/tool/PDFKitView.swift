@@ -129,7 +129,7 @@ struct PDFKitView: UIViewRepresentable {
         }
         
         private func addFreeText(on page: PDFPage, at pt: CGPoint, text: String) {
-            let rect = CGRect(x: pt.x, y: pt.y, width: 220, height: 80)
+            let rect = CGRect(x: pt.x, y: pt.y - 80, width: 220, height: 80)
             let ann = PDFAnnotation(bounds: rect, forType: .freeText, withProperties: nil)
             ann.contents = text
             ann.font = .systemFont(ofSize: 14)
